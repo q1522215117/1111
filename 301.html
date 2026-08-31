@@ -1,1 +1,88 @@
-<meta http-equiv="refresh" content="0; url=http://43.226.47.56:666">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云主机实例详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgMain: '#081024',
+                        card: '#111b36',
+                        primary: '#2563eb',
+                        warnRed: '#dc2626',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: #081024;
+            background-image: radial-gradient(circle at 50% 0%, #162b58 0%, transparent 60%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex items-center justify-center px-4 py-16">
+    <div class="w-full max-w-4xl">
+        <div class="bg-card rounded-2xl p-10 card-shadow border border-blue-900/40">
+            <div class="flex flex-wrap justify-between items-start gap-6 mb-10">
+                <div>
+                    <h1 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <i class="fa fa-server text-blue-400 text-3xl"></i>云主机实例详情
+                    </h1>
+                    <div class="inline-flex items-center px-5 py-2 rounded-full bg-warnRed/20 text-warnRed text-base font-medium">
+                        <span class="w-2 h-2 bg-warnRed rounded-full mr-2 animate-pulse"></span>
+                        状态：未续费 - 停止运行 - 已解约
+                    </div>
+                </div>
+                <div class="bg-bgMain px-6 py-4 rounded-xl border border-blue-800/40">
+                    <div class="text-sm text-slate-400">公网IP</div>
+                    <div class="font-mono text-2xl text-blue-300 mt-1">43.226.47.56</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">网络类型</div>
+                    <div class="mt-2 text-xl">华北 BGP</div>
+                </div>
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">操作系统</div>
+                    <div class="mt-2 text-xl">CentOS 7.6 x86-64 (64bit)</div>
+                </div>
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">CPU</div>
+                    <div class="mt-2 text-xl">4 核</div>
+                </div>
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">内存</div>
+                    <div class="mt-2 text-xl">4G</div>
+                </div>
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">公网带宽</div>
+                    <div class="mt-2 text-xl">20M</div>
+                </div>
+                <div class="bg-bgMain p-5 rounded-xl border border-blue-900/30 hover:border-blue-600/40 transition">
+                    <div class="text-sm text-slate-400">SSD 数据盘</div>
+                    <div class="mt-2 text-xl">20G</div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-blue-900/40">
+                <a target="_blank" href="https://www.ctyun.cn/act/tyy/818shengdian?track=source_360brand-medium_cpt-content_se1620665"
+                   class="bg-primary hover:bg-blue-700 px-8 py-4 rounded-xl transition-all inline-flex items-center gap-3 text-lg shadow-lg shadow-blue-600/20 hover:-translate-y-0.5">
+                    <i class="fa fa-external-link"></i>前往活动开通
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
